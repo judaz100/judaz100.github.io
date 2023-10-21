@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
+<html>
+<head>
+  <title>Dasmoto's Arts & Crafts</title>
+  <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
 
-  <body>
-    <header>
-      <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+  <h1>Dasmoto's Arts & Crafts</h1>
 
-        <section id="downloads">
-          {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
-            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
-          {% endif %}
-          <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+  <!-- Brushes Section -->
 
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
-    </div>
-  </body>
+  <div class="item">
+    <h2 id="brush">Brushes</h2>
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/hacksaw.jpeg"/>
+    <h3>Hacksaw Brushes</h3>
+    <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes. <span class="price">Starting at $3.00 / brush.</span></p>
+  </div>
+
+  <!-- Frames Section -->
+
+  <div class="item">
+    <h2 id="frame">Frames</h2>
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/frames.jpeg"/>
+    <h3>Art Frames (assorted)</h3>
+    <p>Assorted frames made of different material, including MDF, birchwood, and PDE. Select frames can be sanded and painted according to your needs. <span class="price">Starting at $2.00 / frame.</span></p>
+  </div>
+
+  <!-- Paint Section -->
+
+  <div class="item">
+    <h2 id="paint">Paint</h2>
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/finnish.jpeg"/>
+    <h3>Clean Finnish Paint</h3>
+    <p>Imported paint from Finland. Over 256 colors available in-store, varying in quantity (1 oz. to 8 oz.). Clean Finnish paint microbinds to canvas, increasing the finish and longevity of any artwork. <span class="price">Starting at $5.00 / tube.</span>
+  </div>
+
+</body>
 </html>
